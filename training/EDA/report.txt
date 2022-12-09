@@ -1,0 +1,2 @@
+1. 'DATE','Precip','WETBULBTEMPF','DewPointTempF','StationPressure' are unnecessary columns
+2. Few attributes contains '?' values
