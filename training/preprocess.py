@@ -1,4 +1,5 @@
 from sklearn.impute import KNNImputer
+from sklearn.preprocessing import StandardScaler
 import pandas as pd
 import numpy as np
 
@@ -46,4 +47,7 @@ class calculate:
         except Exception as e:
             print("Exception occured in separate_label_feature method")
 
-    
+    def standardScalingData(self,X):
+        scalar = StandardScaler()
+        X_scaled = scalar.fit_transform(X)
+        return X_scaled
