@@ -32,6 +32,6 @@ class predict_value:
             for val in (model.predict(cluster_data.values)):
                 result.append(val)
             result = pd.DataFrame(result,columns=['Predictions'])
-            output_csv=result.to_csv("Predictions.csv",header=True)
+            output_csv=result.to_csv("templates\Predictions.csv",header=True)
         return output_csv
     
